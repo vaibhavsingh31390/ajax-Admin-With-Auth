@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-Color_One: #F94892;
+    --bg-Color_Two: #FFA1C9;
+    --color_Three: #E60965;
+    --color_Four: #FBE5E5;
+    --color_Five: #ffffff;
+}
+
+body{
+    background-color: var(--color_Four);
+}
+
+header{
+    background-color: var(--bg-Color_One) ;
+}
+.navbar-brand{
+    color: var(--color_Four) !important;
+}
+
+.custom_link-Btn{
+    padding: 7px 20px !important;
+    margin-left: 10px;
+    font-weight: 600;
+    background-color: var(--bg-Color_Two);
+    color: var(--color_Three) !important;
+    transition: 0.35s ease;
+    border: none;
+    outline: none;
+}
+.custom_link-Btn:hover{
+    background-color: var(--color_Four);
+    color: var(--bg-Color_One) !important;
+}
+
+.login_container{
+    min-height: calc(100vh - 56px);
+
+}
+.login_container .row{
+    min-height: inherit;
+}
+
+/* FORM */
+.heading-1{
+    color: var(--color_Three);
+    text-transform: uppercase;
+}
+label{
+    color: var(--bg-Color_One);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.form-control, .form-control:focus, .form-control:visited{
+    background-color: #ffa1ca67 !important;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #ffa1ca67 inset !important;
+}
+#btn_Login{
+    background-color: var(--color_Three);
+    color: var(--color_Four);
+    font-weight: 600;
+    border: none;
+    padding: 8px 20px  !important;
+    transition: 0.35s ease;
+}
+#btn_Login:hover{
+    background-color: var(--bg-Color_Two);
+    color: var(--color_Three);
+}
+.error_box{
+    min-height: 40px;
+    background-color: #ffa1ca09;
+    width: 100%;
+}
+.error{
+    color: var(--color_Three);
+    font-weight: 700;
+}
+
+/* DASHBOARD */
+.data_col-Head{
+    min-height: 40px;
+    border: 2px solid var(--bg-Color_Two) !important;
+    font-weight: 700;
+    color: var(--color_Three);
+    display: flex;
+    align-items: center;
+}
+.data_col-Head:last-child{
+    justify-content: center;
+}
+
+.data_col{
+    min-height: 30px;
+    border: 2px solid var(--bg-Color_Two) !important;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0.5%;
+    word-break: break-all;
+}
+
+.Btn{
+    background-color: var(--bg-Color_Two);
+    color: var(--color_Three);
+    font-weight: 600;
+    border: none;
+    transition: 0.35s ease;
+    width: 100%;
+}
+.Btn:hover{
+    background-color: var(--color_Three);
+}
+
+.edit_Btn{
+    text-decoration: none !important;
+    color: var(--color_Three);
+    width: 100%;
+}
+
+.edit_Btn:hover, .delete_Btn:hover, .delete_Btn:focus{
+    text-decoration: none !important;
+    color: var(--color_Four);
+}
+
+/* MODAL */
+.modal_Cont{
+    min-height: 100vh;
+    background-color: #ffffffa4;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    Transform: translate(-50%, -50%);
+    padding: 18% 8%; 
+    display: none; 
+}
+.modal_Row{
+    background-color: var(--color_Four);
+    padding: 2% 2%;
+}
+.close_Btn{
+    background-color: var(--bg-Color_One);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.45s ease;
+    cursor: pointer;
+}
+.close_Btn i{
+    color: var(--color_Four);
+    font-size: 21px;
+}
+.close_Btn:hover  i{
+    color: var(--bg-Color_Two);
+}
+
+.updateBtn, .updateBtn:focus{
+    background-color: var(--color_Three);
+    color: var(--color_Four);
+    font-weight: 600;
+    border: none;
+    padding: 8px 20px  !important;
+    transition: 0.35s ease;
+}
+
+.updateBtn:hover{
+    background-color: var(--bg-Color_Two);
+    color: var(--color_Three);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--bg-Color_Two);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--bg-Color_One);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--bg-Color_Two);
+  }
+
